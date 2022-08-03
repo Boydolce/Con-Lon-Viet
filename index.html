@@ -1,224 +1,438 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <div class="logo">
-           <img src="images/logo.png"> 
-        </div>
-        <div class="menu">
-            <li><a href="">NỮ</a>
-                <ul class="submenu">
-                    <li><a href="">Hàng mới về</a></li>
-                    <li><a href="">Áo</a>
-                        <ul>
-                            <li><a href="">Áo sơ mi</a></li>
-                            <li><a href="">Áo thun</a></li>
-                            <li><a href="">Áo khoác</a></li>
-                            <li><a href="">Áo len</a></li>
-                        
-                            
-                        </ul>
-                    </li>
-                    <li><a href="">Quần</a>
-                        <ul>
-                            <li><a href="">Quần dài</a></li>
-                            <li><a href="">Quần jeans</a></li>
-                            <li><a href="">Jumpsuit</a></li>
-                            
-                        </ul>
-                    </li>
-                    
+  <head>
+    <title>IVY Moda</title>
 
-                </ul>
-            
-            
-            
-            </li>
-            <li><a href="">NAM</a>
-                <ul class="submenu">
-                    <li><a href="">Hàng mới về</a></li>
-                    <li><a href="">Áo</a>
-                        <ul>
-                            <li><a href="">Áo sơ mi</a></li>
-                            <li><a href="">Áo polo</a></li>
-                            <li><a href="">Áo len</a></li>
-                        
-                            
-                        </ul>
-                    </li>
-                    <li><a href="">Quần</a>
-                        <ul>
-                            <li><a href="">Quần dài</a></li>
-                            <li><a href="">Quần jeans</a></li>
-                            <li><a href="">Quần âu</a></li>
-                            
-                        </ul>
-                    </li>
-                    
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/slick/slick.css" />
+    <link rel="stylesheet" href="./assets/css/slick/slick.theme.css" />
+    <link rel="stylesheet" href="./assets/css/filter.css">
+  </head>
+  <body>
+    <!-- Begin Header -->
+    <header id="header">
+      <div class="logo">
+        <img src="./assets/images/logo.png" />
+      </div>
 
-                </ul>
+      <div class="menu">
+        <li>
+          <a href="">NỮ</a>
+          <ul class="submenu">
+            <li>
+              <a href=""><strong>Hàng mới về</strong>̀</a>
             </li>
-            <li><a href="">TRẺ EM</a>
-                <ul class="submenu">
-                    
-                    <li><a href="">Bé gái</a>
-                        <ul>
-                            <li><a href="">Áo bé gái</a></li>
-                            <li><a href="">Quần bé gái</a></li>
-                            <li><a href="">Váy bé gái</a></li>
-                            
-                        
-                            
-                        </ul>
-                    </li>
-                    <li><a href="">Bé trai</a>
-                        <ul>
-                            <li><a href="">Áo bé trai</a></li>
-                            <li><a href="">Quần bé trai</a></li>
-                            
-                            
-                        </ul>
-                    </li>
-                    
-
-                </ul>
+            <li>
+              <a href=""> <strong>Áo</strong></a>
+              <ul>
+                <li><a href="">Áo sơ mi</a></li>
+                <li><a href="">Áo thun</a></li>
+                <li><a href="">Áo khoác</a></li>
+                <li><a href="">Áo len</a></li>
+              </ul>
             </li>
-            <li><a href="">BỘ SƯU TẬP</a>
-                <ul class="submenu">
-                    <li><a href="">Nữ</a>
-                        <ul>
-                            <li><a href="">Discover Charming</a></li>
-                            <li><a href="">Spring Love</a></li>
-                            <li><a href="">Art Station</a></li>
-                        
-                        </ul>
-                    </li>
-                    <li><a href="">Nam</a>
-                        <ul>
-                            <li><a href="">New Polo for Men</a></li>
-                            <li><a href="">Nature Soft</a></li>
-                        
-                        </ul>
-                    </li>
-                    <li><a href="">Trẻ em</a>
-                        <ul>
-                            <li><a href="">Adorable Sweatsuit</a></li>
-                            <li><a href="">Draw the Dream</a></li>
-                        
-                        </ul>
-                    </li>
-                    
-
-                </ul>
+            <li>
+              <a href=""><strong>Quần</strong></a>
+              <ul>
+                <li><a href="">Quần dài</a></li>
+                <li><a href="">Quần jeans</a></li>
+                <li><a href="">Jumpsuit</a></li>
+              </ul>
             </li>
-            <li><a href="">THÔNG TIN</a>
-                <ul class="submenu">
-                    <li><a href="">Về IVY moda</a></li>
-                    <li><a href="">Chính sách thẻ thành viên</a></li>
-                    <li><a href="">Chính sách đổi trả</a></li>
-                    <li><a href="">Q&A</a></li> 
-                </ul>
+          </ul>
+        </li>
+        <li>
+          <a href="">NAM</a>
+          <ul class="submenu">
+            <li>
+              <a href=""><strong>Hàng mới về</strong></a>
             </li>
-            
-         </div>
-         <div class="others">
-            <li><input placeholder="Tìm kiếm" type="text"> <i class="fa fa-search"></i></li>
-            <li> <a class="fa fa-paw" href=""></a></li>
-            <li> <a class="fa fa-user" href=""></a></li>
-            <li> <a class="fa fa-shopping-bag" href=""></a></li>
-
-         </div>
+            <li>
+              <a href=""><strong>Áo</strong></a>
+              <ul>
+                <li><a href="">Áo sơ mi</a></li>
+                <li><a href="">Áo polo</a></li>
+                <li><a href="">Áo len</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href=""><strong>Quần</strong></a>
+              <ul>
+                <li><a href="">Quần dài</a></li>
+                <li><a href="">Quần jeans</a></li>
+                <li><a href="">Quần âu</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="">TRẺ EM</a>
+          <ul class="submenu">
+            <li>
+              <a href=""><strong>Bé gái</strong></a>
+              <ul>
+                <li><a href="">Áo bé gái</a></li>
+                <li><a href="">Quần bé gái</a></li>
+                <li><a href="">Váy bé gái</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href=""><strong>Bé trai</strong></a>
+              <ul>
+                <li><a href="">Áo bé trai</a></li>
+                <li><a href="">Quần bé trai</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="">BỘ SƯU TẬP</a>
+          <ul class="submenu">
+            <li>
+              <a href=""><strong>Nữ</strong></a>
+              <ul>
+                <li><a href="">Discover Charming</a></li>
+                <li><a href="">Spring Love</a></li>
+                <li><a href="">Art Station</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href=""><strong>Nam</strong></a>
+              <ul>
+                <li><a href="">New Polo for Men</a></li>
+                <li><a href="">Nature Soft</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href=""><strong>Trẻ em</strong></a>
+              <ul>
+                <li><a href="">Adorable Sweatsuit</a></li>
+                <li><a href="">Draw the Dream</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="">VỀ CHÚNG TÔI</a>
+          <ul class="submenu">
+            <li>
+              <a href=""><strong>Về IVY moda</strong></a>
+            </li>
+            <li>
+              <a href=""><strong>Chính sách thẻ thành viên</strong></a>
+            </li>
+            <li>
+              <a href=""><strong>Chính sách đổi trả </strong></a>
+            </li>
+            <li>
+              <a href=""><strong>Hệ thống cửa hàng</strong></a>
+            </li>
+          </ul>
+        </li>
+      </div>
+      <div class="others">
+        <li>
+          <form action="#" method="get">
+            <input placeholder="Tìm kiếm" type="text" />
+            <button type="submit">
+              <i class="fa fa-search others-icon"></i>
+            </button>
+          </form>
+        </li>
+        <li><a class="fa fa-user" href="./login.html"></a></li>
+        <li><a class="fa fa-shopping-cart" href=""></a></li>
+      </div>
     </header>
-    <section id ="slider">
-        <div class="aspect-ratio-169">
-            <img src= "images/slide1.jpg">
-            <img src= "images/slide2.jpg">
-            <img src= "images/slide3.jpg">
-            <img src= "images/slide4.jpg">
-        </div>
-        <div class="dot-container">
-            <div class="dot active"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-        </div>
-    </section>
-    <section class="app-container">
-        <p>Tải ứng dụng IVY moda</p>
-        <div class="app-goodle">
-            <img src="images/appstore.png">
-            <img src="images/googleplay.png">
-        </div>
-        <p>Nhận thông tin các chương trình của IVY moda</p> 
-        <input type="text" placeholder="Nhập email của bạn">
+    <!-- End Header -->
 
-    </section>
-    <!------------------------------------------footer-------------------------->
-    <div class="footer-top">
-        <li><a href=""><img src="images/img-congthuong.png"alt="" ></a></li>
-        <li><a href=""><img src="images/DMCA.png"alt="" ></a></li>
-        <li><a href=""></a>Giới thiệu</li>
-        <li><a href=""></a>Dịch vụ khách hàng</li>
-        <li><a href=""></a>Liên hệ</li>
+    <!-- Begin Slider -->
+    <div class="slider" style="margin-top: 70px">
+      <img src="./assets/images/slider/slide2.jpg" class="img-test" />
+      <img src="./assets/images/slider/slide3.jpg" class="img-test" />
+      <img src="./assets/images/slider/slide4.jpg" class="img-test" />
+      <img src="./assets/images/slider/slide1.jpg" class="img-test" />
+    </div>
+    <!-- End Slider -->
+
+    <!-- Begin Content -->
+    <div class="container">
+        <div id="button-filters">
+          <button class="btn active" onclick="filterSelection('all')">Hiển thị tất cả</button>
+          <button class="btn" onclick="filterSelection('mens')"> Nam</button>
+          <button class="btn" onclick="filterSelection('famales')"> Nữ</button>
+          <button class="btn" onclick="filterSelection('childrens')"> Trẻ</button>
+        </div>
         
-
+        <!-- Portfolio Gallery Grid -->
+        <div class="row">
+          <div class="column mens">
+            <div class="content">
+              <a href="details.html">
+                <img src="./assets/images/men/men1.jpg" alt="Men" class="content-image">
+              </a>
+              <h4>Mountains</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+          <div class="column mens">
+            <div class="content">
+              <img src="./assets/images/men/men2.jpg" alt="Men" class="content-image">
+              <h4>Lights</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+          <div class="column mens">
+            <div class="content">
+              <img src="./assets/images/men/men3.jpg" alt="Men" class="content-image">
+              <h4>Forest</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
         
-    </div>
-    <div class="footer-center">
-        <p>
-            Công ty Cổ phần Dự Kim với số đăng ký kinh doanh: 0105777650 </br>
-            Địa chỉ đăng ký: Tổ dân phố Tháp, P.Đại Mỗ, Q.Nam Từ Liêm, TP.Hà Nội, Việt Nam </br>
-            Số điện thoại: <b>0243 205 2222</b>
-        </p>
-    </div>
-    <div class="footer-bottom">
-        ©IVYmoda All rights reserved
-    </div>
-</body>
-<script>
-    const header = document.querySelector("header")
-window.addEventListener("scroll",function(){
-    x = window.pageYOffset
-    if(x>0){
-        header.classList.add("sticky")
-    }
-    else{
-        header.classList.remove("sticky")
-    }
-})
-    const imgPosition = document.querySelectorAll(".aspect-ratio-169 img")
-    const imgContainer= document.querySelector('.aspect-ratio-169')
-    const dotItem = document.querySelectorAll(".dot")
-    let imgNumber = imgPosition.length
-    let index = 0
-    imgPosition.forEach(function(image,index){
-       image.style.left = index*100 + "%"
-       dotItem[index].addEventListener("click",function(){
-        slider(index)
-       })
-})
-    function imgSlide (){
-        index++;
-        //console.log(index)
-        if(index>=imgNumber) {index=0}
-        slider(index)
+          <div class="column famales">
+            <div class="content">
+              <img src="./assets/images/women/women1.jpg" alt="Women" class="content-image">
+              <h4>Retro</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+          <div class="column famales">
+            <div class="content">
+              <img src="./assets/images/women/women2.jpg" alt="Women" class="content-image">
+              <h4>Fast</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+          <div class="column famales">
+            <div class="content">
+              <img src="./assets/images/women/women3.jpg" alt="Women" class="content-image">
+              <h4>Classic</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+        
+          <div class="column childrens">
+            <div class="content">
+              <img src="./assets/images/children/children1.jpg" alt="Children" class="content-image">
+              <h4>Girl</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+          <div class="column childrens">
+            <div class="content">
+              <img src="./assets/images/children/children2.jpg" alt="Children" class="content-image">
+              <h4>Man</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+          <div class="column childrens">
+            <div class="content">
+              <img src="./assets/images/children/children3.jpg" alt="Children" class="content-image">
+              <h4>Woman</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+        <!-- END GRID -->
+        </div>
 
-    }
-    function slider(index){
-        imgContainer.style.left = "-" +index*100+ "%"
-        const dotActive = document.querySelector(".active")
-        dotActive.classList.remove("active")
-        dotItem[index].classList.add("active")
-    }
-    setInterval(imgSlide,5000)
+        <!-- END GRID -->
+      </div>
+    </div>
+    <!-- End Content -->
 
-</script>
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-container">
+          <div class="flex-container">
+              <div class="footer-info">
+                <div class="logo-info">
+                  <a href="index.html">
+                      <img src="./assets/images/logo.png" alt="logo-footer" class="logo-img">
+                  </a>
+              
+                  <a href="#" class="dmca-badge">
+                      <img src ="./assets/images/icon/DMCA.png" alt="DMCA.com Protection Status" class="logo-img"/>
+                  </a>
+              
+                  <a href="#">
+                      <img src="./assets/images/icon/img-congthuong.png" alt="img-congthuong" class="logo-img">
+                  </a>
+              </div>
+
+              <div class="content-info">
+                <div class="info-shop">
+                    <p>Công ty Cổ phần Dự Kim với số đăng ký<br> kinh doanh: 0105777650</p>
+                    <p><strong>Địa chỉ đăng ký: </strong>Tổ dân phố Tháp, P.Đại<br> Mỗ, Q.Nam Từ Liêm, TP.Hà Nội, Việt Nam</p>
+                    <p><strong>Số điện thoại: </strong>0243 205 2222</p>
+                </div>
+
+                <ul class="list-social">
+                    <li>
+                        <a href="" target="_blank">
+                            <img src="" alt="ic_fb">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank">
+                            <img src="" alt="ic_gg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank">
+                            <img src="" alt="ic_instagram" style="height: 30px;">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank">
+                            <img src="" alt="ic_pinterest" style="height: 27px">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank">
+                            <img src="" alt="ic_ytb">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+              </div>
+
+              <div class="footer-intro">
+                  <p class="title-intro">Giới thiệu</p>
+                  <ul>
+                      <li>
+                          <a href="#" class="link-intro">Về IVY moda</a>
+                      </li>
+                      <li>
+                          <a href="#" class="link-intro">Tuyển dụng</a>
+                      </li>
+                      <li>
+                          <a href="#" class="link-intro">Hệ thống cửa hàng</a>
+                      </li>
+                  </ul>
+              </div>
+
+              <div class="footer-service">
+                <p class="title-service">Dịch vụ khách hàng</p>
+                <ul>
+                    <li>
+                        <a href="#" class="link-service">Chính sách điều khoản</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link-service">Hướng dẫn mua hàng</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link-service">Chính sách thanh toán</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link-service">Chính sách đổi trả</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link-service">Chính sách bảo hành</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link-service">Chính sách giao nhận vận chuyển</a>
+                    </li>
+                </ul>
+              </div>
+              <div class="footer-contact">
+                <p class="title-contact">Liên hệ</p>
+                    <ul>
+                        <li>
+                            <a href="#" class="link-contact">Hotline</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link-contact">Email</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link-contact">Live Chat</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link-contact" target="_blank">Messenger</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link-contact">Liên hệ</a>
+                        </li>
+                    </ul>
+              </div>
+              <div class="footer-mail">
+                <div class="mail-container">
+                    <p class="title-mail">Nhận thông tin các chương trình của IVY moda</p>
+                    <form class="mail-form">
+                        <input id="email_subscribe" type="text" name="email" placeholder="Nhập địa chỉ email" required="required">
+                        <div class="btn-submit">
+                            <input id="btn-submit" class="form-submit" value="Đăng ký" type="submit" />
+                        </div>
+                    </form>
+                    <div id="subscribe_error"></div>
+                </div>
+                <div class="mail-dowload">
+                    <p class="dowload-mail">Download App</p>
+                    <ul>
+                        <li>
+                            <a id="app_ios" href="#" class="link-white" title="Tải App IVYmoda trên App Store"> 
+                              <img src="./assets/images/icon/appstore.png" class="img-fluid" alt="appstore"> 
+                            </a>
+                        </li>
+                        <li>
+                            <a id="app_android" href="#" class="link-white" title="Tải App IVYmoda trên Google Play"> 
+                              <img src="./assets/images/icon/googleplay.png" class="img-fluid" alt="googleplay"> 
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="footer-copyright">
+          ©IVYmoda All rights reserved
+          </div>
+    </footer>
+  </body>
+
+  <script>
+    const header = document.querySelector("header");
+    window.addEventListener("scroll", function () {
+      x = window.pageYOffset;
+      if (x > 0) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    });
+  </script>
+
+  <script
+    type="text/javascript"
+    src="https://code.jquery.com/jquery-1.11.0.min.js"
+  ></script>
+
+  <script
+    type="text/javascript"
+    src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+  ></script>
+  <script type="text/javascript" src="./assets/js/slick/slick.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $(".slider").slick({
+        // slidesToShow: 3,
+        // slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        dots: true,
+      });
+    });
+  </script>
+
+  <script src="./assets/js/filter.js"></script>
 </html>
