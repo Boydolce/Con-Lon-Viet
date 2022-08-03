@@ -1,485 +1,469 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/cart.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
-    />
-    <title>Document</title>
-  </head>
-  <body>
-    <header>
-      <div class="logo">
-        <img src="images/logo.png" />
-      </div>
-      <div class="menu">
-        <li>
-          <a href="">NỮ</a>
-          <ul class="submenu">
-            <li>
-              <a href=""><strong>Hàng mới về</strong>̀</a>
-            </li>
-            <li>
-              <a href=""> <strong>Áo</strong></a>
-              <ul>
-                <li><a href="">Áo sơ mi</a></li>
-                <li><a href="">Áo thun</a></li>
-                <li><a href="">Áo khoác</a></li>
-                <li><a href="">Áo len</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href=""><strong>Quần</strong></a>
-              <ul>
-                <li><a href="">Quần dài</a></li>
-                <li><a href="">Quần jeans</a></li>
-                <li><a href="">Jumpsuit</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="">NAM</a>
-          <ul class="submenu">
-            <li>
-              <a href=""><strong>Hàng mới về</strong></a>
-            </li>
-            <li>
-              <a href=""><strong>Áo</strong></a>
-              <ul>
-                <li><a href="">Áo sơ mi</a></li>
-                <li><a href="">Áo polo</a></li>
-                <li><a href="">Áo len</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href=""><strong>Quần</strong></a>
-              <ul>
-                <li><a href="">Quần dài</a></li>
-                <li><a href="">Quần jeans</a></li>
-                <li><a href="">Quần âu</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="">TRẺ EM</a>
-          <ul class="submenu">
-            <li>
-              <a href=""><strong>Bé gái</strong></a>
-              <ul>
-                <li><a href="">Áo bé gái</a></li>
-                <li><a href="">Quần bé gái</a></li>
-                <li><a href="">Váy bé gái</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href=""><strong>Bé trai</strong></a>
-              <ul>
-                <li><a href="">Áo bé trai</a></li>
-                <li><a href="">Quần bé trai</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="">BỘ SƯU TẬP</a>
-          <ul class="submenu">
-            <li>
-              <a href=""><strong>Nữ</strong></a>
-              <ul>
-                <li><a href="">Discover Charming</a></li>
-                <li><a href="">Spring Love</a></li>
-                <li><a href="">Art Station</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href=""><strong>Nam</strong></a>
-              <ul>
-                <li><a href="">New Polo for Men</a></li>
-                <li><a href="">Nature Soft</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href=""><strong>Trẻ em</strong></a>
-              <ul>
-                <li><a href="">Adorable Sweatsuit</a></li>
-                <li><a href="">Draw the Dream</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="">VỀ CHÚNG TÔI</a>
-          <ul class="submenu">
-            <li>
-              <a href=""><strong>Về IVY moda</strong></a>
-            </li>
-            <li>
-              <a href=""><strong>Chính sách thẻ thành viên</strong></a>
-            </li>
-            <li>
-              <a href=""><strong>Chính sách đổi trả </strong></a>
-            </li>
-            <li>
-              <a href=""><strong>Hệ thống cửa hàng</strong></a>
-            </li>
-          </ul>
-        </li>
-      </div>
-      <div class="others">
-        <li>
-          <input placeholder="Tìm kiếm" type="text" />
-          <i class="fa fa-search"></i>
-        </li>
-        <li>
-          <a class="fa fa-user" href=""></a>
-        </li>
-        <li><a class="fa fa-shopping-cart" href=""></a></li>
-      </div>
-    </header>
-    <!----------------------------------------Cart ----------------------- -->
-    <section class="cart">
-      <div class="cart-top-wap">
-        <div class="cart-top">
-          <div class="cart-top-cart cart-top-item">
-            <i class="fa fa-shopping-cart"></i>
-          </div>
-          <div class="cart-top-adress cart-top-item">
-            <i class="fa fa-map-marked-alt"></i>
-          </div>
-          <div class="cart-top-payment cart-top-item">
-            <i class="fa fa-money-check-alt"></i>
-          </div>
-        </div>
-      </div>
-      <div class="content">
-        <div class="cart-content">
-          <div class="content-left">
-            <table>
-              <tr>
-                <th>Sản phẩm</th>
-                <th>Tên sản phẩm</th>
-                <th>Màu</th>
-                <th>Size</th>
-                <th>Số lượng</th>
-                <th>Tổng tiền</th>
-                <th></th>
-              </tr>
-              <tr>
-                <td><img src="images/sp1.1.jpg" alt="" /></td>
-                <td><p>ĐẦM LỤA XÒE TAY PHỒNG</p></td>
-                <td><p>Đen</p></td>
-                <td><p>L</p></td>
-                <td><input type="number" value="1" min="1" /></td>
-                <td>
-                  <p>2.090.000đ<sup>đ</sup></p>
-                </td>
-                <td><span>X</span></td>
-              </tr>
-            </table>
-          </div>
-          <div class="content-right">
-            <table>
-              <tr>
-                <th colspan="2">TỔNG TIỀN GIỎ HÀNG</th>
-              </tr>
-              <tr>
-                <td>Tổng sản phẩm</td>
-                <td>2</td>
-              </tr>
-              <tr>
-                <td>Tổng tiền hàng</td>
-                <td>
-                  <p>2.090.000đ<sup>đ</sup></p>
-                </td>
-              </tr>
-              <tr>
-                <td>Thành tiền</td>
-                <td>
-                  <p style="color: _black; font-weight: bold">
-                    2.090.000đ<sub>đ</sub>
-                  </p>
-                </td>
-              </tr>
-              <tr>
-                <td>Tạm tính</td>
-                <td>
-                  <p style="color: _black; font-weight: bold">
-                    2.090.000đ<sub>đ</sub>
-                  </p>
-                </td>
-              </tr>
-            </table>
-            <div class="cart-content-right-text">
-              <p style="color: green; font-weight: bold">
-                Đơn hàng của bạn được Miễn phí ship
-              </p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/base.css" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="./assets/css/cart.css" />
+        <link rel="stylesheet" href="css/cart.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- Begin Header -->
+        <header id="header">
+            <div class="logo">
+                <img src="./assets/images/logo.png" />
             </div>
-            <div class="cart-content-right-button">
-              <button>Tiếp tục mua hàng</button>
-              <button>Thanh toán</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!----------------------------------------Footer---------------->
-    <div class="site-bottom">
-      <div class="container">
-        <div class="main-footer d-flex">
-          <div class="left-footer">
-            <div class="top-left">
-              <div class="logo-footer">
-                <a href="https://ivymoda.com/">
-                  <img
-                    src="https://pubcdn2.ivymoda.com/images/logo-footer.png"
-                    alt="logo-footer"
-                  />
-                </a>
 
-                <a
-                  href="//www.dmca.com/Protection/Status.aspx?ID=0cfdeac4-6e7f-4fca-941f-57a0a0962777"
-                  target="_blank"
-                  title="DMCA.com Protection Status"
-                  class="dmca-badge"
-                >
-                  <img
-                    src="https://images.dmca.com/Badges/dmca_protected_16_120.png?ID=0cfdeac4-6e7f-4fca-941f-57a0a0962777"
-                    alt="DMCA.com Protection Status"
-                  />
-                </a>
-
-                <a
-                  target="_blank"
-                  href="http://online.gov.vn/Home/WebDetails/36596"
-                >
-                  <img
-                    src="https://pubcdn2.ivymoda.com/images/img-congthuong.png"
-                    alt="img-congthuong"
-                  />
-                </a>
-              </div>
+            <div class="menu">
+                <li>
+                    <a href="">NỮ</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href=""><strong>Hàng mới về</strong>̀</a>
+                        </li>
+                        <li>
+                            <a href=""> <strong>Áo</strong></a>
+                            <ul>
+                                <li><a href="">Áo sơ mi</a></li>
+                                <li><a href="">Áo thun</a></li>
+                                <li><a href="">Áo khoác</a></li>
+                                <li><a href="">Áo len</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href=""><strong>Quần</strong></a>
+                            <ul>
+                                <li><a href="">Quần dài</a></li>
+                                <li><a href="">Quần jeans</a></li>
+                                <li><a href="">Jumpsuit</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">NAM</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href=""><strong>Hàng mới về</strong></a>
+                        </li>
+                        <li>
+                            <a href=""><strong>Áo</strong></a>
+                            <ul>
+                                <li><a href="">Áo sơ mi</a></li>
+                                <li><a href="">Áo polo</a></li>
+                                <li><a href="">Áo len</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href=""><strong>Quần</strong></a>
+                            <ul>
+                                <li><a href="">Quần dài</a></li>
+                                <li><a href="">Quần jeans</a></li>
+                                <li><a href="">Quần âu</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">TRẺ EM</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href=""><strong>Bé gái</strong></a>
+                            <ul>
+                                <li><a href="">Áo bé gái</a></li>
+                                <li><a href="">Quần bé gái</a></li>
+                                <li><a href="">Váy bé gái</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href=""><strong>Bé trai</strong></a>
+                            <ul>
+                                <li><a href="">Áo bé trai</a></li>
+                                <li><a href="">Quần bé trai</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">BỘ SƯU TẬP</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href=""><strong>Nữ</strong></a>
+                            <ul>
+                                <li><a href="">Discover Charming</a></li>
+                                <li><a href="">Spring Love</a></li>
+                                <li><a href="">Art Station</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href=""><strong>Nam</strong></a>
+                            <ul>
+                                <li><a href="">New Polo for Men</a></li>
+                                <li><a href="">Nature Soft</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href=""><strong>Trẻ em</strong></a>
+                            <ul>
+                                <li><a href="">Adorable Sweatsuit</a></li>
+                                <li><a href="">Draw the Dream</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">VỀ CHÚNG TÔI</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href=""><strong>Về IVY moda</strong></a>
+                        </li>
+                        <li>
+                            <a href=""
+                                ><strong>Chính sách thẻ thành viên</strong></a
+                            >
+                        </li>
+                        <li>
+                            <a href=""><strong>Chính sách đổi trả </strong></a>
+                        </li>
+                        <li>
+                            <a href=""><strong>Hệ thống cửa hàng</strong></a>
+                        </li>
+                    </ul>
+                </li>
             </div>
-            <div class="content-left-ft content-ft">
-              <div class="info-left-ft">
-                <p>
-                  Công ty Cổ phần Dự Kim với số đăng ký<br />
-                  kinh doanh: 0105777650
-                </p>
-                <p>
-                  <strong>Địa chỉ đăng ký: </strong>Tổ dân phố Tháp, P.Đại<br />
-                  Mỗ, Q.Nam Từ Liêm, TP.Hà Nội, Việt Nam
-                </p>
-                <p><strong>Số điện thoại: </strong>0243 205 2222</p>
-              </div>
-              <ul class="list-social">
+            <div class="others">
                 <li>
-                  <a
-                    href="https://www.facebook.com/profile.php?id=100012197828054"
-                    target="_blank"
-                  >
-                    <img
-                      src="https://pubcdn2.ivymoda.com/images/ic_fb.svg"
-                      alt="ic_fb"
-                    />
-                  </a>
+                    <form action="#" method="get">
+                        <input placeholder="Tìm kiếm" type="text" />
+                        <button type="submit">
+                            <i class="fa fa-search others-icon"></i>
+                        </button>
+                    </form>
                 </li>
-                <li>
-                  <a href="https://ivymoda.com/" target="_blank">
-                    <img
-                      src="https://pubcdn2.ivymoda.com/images/ic_gg.svg"
-                      alt="ic_gg"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.instagram.com/ivy_moda/" target="_blank">
-                    <img
-                      src="https://pubcdn2.ivymoda.com/images/ic_instagram.svg"
-                      alt="ic_instagram"
-                      style="height: 30px"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.pinterest.com/ivymoda/_saved/"
-                    target="_blank"
-                  >
-                    <img
-                      src="https://pubcdn2.ivymoda.com/images/ic_pinterest.svg"
-                      alt="ic_pinterest"
-                      style="height: 27px"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.youtube.com/user/thoitrangivymoda"
-                    target="_blank"
-                  >
-                    <img
-                      src="https://pubcdn2.ivymoda.com/images/ic_ytb.svg"
-                      alt="ic_ytb"
-                    />
-                  </a>
-                </li>
-              </ul>
+                <li><a class="fa fa-user" href="./login.html"></a></li>
+                <li><a class="fa fa-shopping-cart" href=""></a></li>
             </div>
-          </div>
-          <div class="center-footer d-flex">
-            <div class="left-center-ft item-center-ft">
-              <p class="title-footer">Giới thiệu</p>
-              <ul>
-                <li>
-                  <a href="https://ivymoda.com/about/gioi-thieu">Về IVY moda</a>
-                </li>
-                <li>
-                  <a target="_blank" href="https://tuyendung.ivy.com.vn"
-                    >Tuyển dụng</a
-                  >
-                </li>
-                <li>
-                  <a href="https://ivymoda.com/page/cuahang"
-                    >Hệ thống cửa hàng</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="main-center-ft item-center-ft">
-              <p class="title-footer">Dịch vụ khách hàng</p>
-              <ul>
-                <li>
-                  <a href="https://ivymoda.com/about/chinhsach-dieukhoan"
-                    >Chính sách điều khoản</a
-                  >
-                </li>
-                <li>
-                  <a href="https://ivymoda.com/about/huong-dan-mua-hang"
-                    >Hướng dẫn mua hàng</a
-                  >
-                </li>
-                <li>
-                  <a href="https://ivymoda.com/about/chinh-sach-thanh-toan"
-                    >Chính sách thanh toán</a
-                  >
-                </li>
-                <li>
-                  <a href="https://ivymoda.com/about/chinh-sach-doi-tra"
-                    >Chính sách đổi trả</a
-                  >
-                </li>
-                <li>
-                  <a href="https://ivymoda.com/about/chinh-sach-bao-hanh"
-                    >Chính sách bảo hành</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://ivymoda.com/about/chinh-sach-giao-nhan-van-chuyen"
-                    >Chính sách giao nhận vận chuyển</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="right-center-ft item-center-ft">
-              <p class="title-footer">Liên hệ</p>
-              <ul>
-                <li>
-                  <a href="tel:02466623434">Hotline</a>
-                </li>
-                <li>
-                  <a href="mailto:saleadmin@ivy.com.vn">Email</a>
-                </li>
-                <li>
-                  <a href="javascript:openCsChatBox();">Live Chat</a>
-                </li>
-                <li>
-                  <a
-                    href="http://messenger.com/t/thoitrangivymoda"
-                    target="_blank"
-                    >Messenger</a
-                  >
-                </li>
-                <li>
-                  <a href="https://ivymoda.com/lien-he">Liên hệ</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="right-footer">
-            <div class="register-form">
-              <p class="title-footer">
-                Nhận thông tin các chương trình của IVY moda
-              </p>
-              <form id="frm_subscribe">
-                <input
-                  id="email_subscribe"
-                  type="text"
-                  name="email"
-                  placeholder="Nhập địa chỉ email"
-                  required="required"
-                />
-                <div class="btn-submit">
-                  <input
-                    id="btn-submit"
-                    class="form-submit"
-                    value="Đăng ký"
-                    type="submit"
-                  />
+        </header>
+        <!-- End Header -->
+        <!----------------------------------------Cart ----------------------- -->
+        <section class="cart">
+            <div class="cart-top-wap">
+                <div class="cart-top">
+                    <div class="cart-top-cart cart-top-item">
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                    <div class="cart-top-adress cart-top-item">
+                        <i class="fa fa-map-marked-alt"></i>
+                    </div>
+                    <div class="cart-top-payment cart-top-item">
+                        <i class="fa fa-money-check-alt"></i>
+                    </div>
                 </div>
-              </form>
-              <div id="subscribe_error"></div>
             </div>
-            <div class="info-right-ft">
-              <p class="title-footer">Download App</p>
-              <ul>
-                <li>
-                  <a
-                    id="app_ios"
-                    href="http://ios.ivy.vn"
-                    class="link-white"
-                    target="_blank"
-                    title="Tải App IVYmoda trên App Store"
-                  >
-                    <img
-                      src="https://pubcdn2.ivymoda.com/images/appstore.png"
-                      class="img-fluid"
-                      alt=""
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    id="app_android"
-                    href="http://android.ivy.vn"
-                    class="link-white"
-                    target="_blank"
-                    title="Tải App IVYmoda trên Google Play"
-                  >
-                    <img
-                      src="https://pubcdn2.ivymoda.com/images/googleplay.png"
-                      class="img-fluid"
-                      alt=""
-                    />
-                  </a>
-                </li>
-              </ul>
+            <div class="content">
+                <div class="cart-content">
+                    <div class="content-left">
+                        <table>
+                            <tr>
+                                <th>Sản phẩm</th>
+                                <th>Tên sản phẩm</th>
+                                <th>Màu</th>
+                                <th>Size</th>
+                                <th>Số lượng</th>
+                                <th>Tổng tiền</th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td><img src="images/sp1.1.jpg" alt="" /></td>
+                                <td><p>ĐẦM LỤA XÒE TAY PHỒNG</p></td>
+                                <td><p>Đen</p></td>
+                                <td><p>L</p></td>
+                                <td>
+                                    <input type="number" value="1" min="1" />
+                                </td>
+                                <td>
+                                    <p>2.090.000đ<sup>đ</sup></p>
+                                </td>
+                                <td><span>X</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="content-right">
+                        <table>
+                            <tr>
+                                <th colspan="2">TỔNG TIỀN GIỎ HÀNG</th>
+                            </tr>
+                            <tr>
+                                <td>Tổng sản phẩm</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>Tổng tiền hàng</td>
+                                <td>
+                                    <p>2.090.000đ<sup>đ</sup></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Thành tiền</td>
+                                <td>
+                                    <p style="color: _black; font-weight: bold">
+                                        2.090.000đ<sub>đ</sub>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Tạm tính</td>
+                                <td>
+                                    <p style="color: _black; font-weight: bold">
+                                        2.090.000đ<sub>đ</sub>
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="cart-content-right-text">
+                            <p style="color: green; font-weight: bold">
+                                Đơn hàng của bạn được Miễn phí ship
+                            </p>
+                        </div>
+                        <div class="cart-content-right-button">
+                            <button>Tiếp tục mua hàng</button>
+                            <button>Thanh toán</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">©IVYmoda All rights reserved</div>
-  </body>
+        </section>
+        <!----------------------------------------Footer---------------->
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="footer-container">
+                <div class="flex-container">
+                    <div class="footer-info">
+                        <div class="logo-info">
+                            <a href="index.html">
+                                <img
+                                    src="./assets/images/logo.png"
+                                    alt="logo-footer"
+                                    class="logo-img"
+                                />
+                            </a>
+
+                            <a href="#" class="dmca-badge">
+                                <img
+                                    src="./assets/images/icon/DMCA.png"
+                                    alt="DMCA.com Protection Status"
+                                    class="logo-img"
+                                />
+                            </a>
+
+                            <a href="#">
+                                <img
+                                    src="./assets/images/icon/img-congthuong.png"
+                                    alt="img-congthuong"
+                                    class="logo-img"
+                                />
+                            </a>
+                        </div>
+
+                        <div class="content-info">
+                            <div class="info-shop">
+                                <p>
+                                    Công ty Cổ phần Dự Kim với số đăng ký<br />
+                                    kinh doanh: 0105777650
+                                </p>
+                                <p>
+                                    <strong>Địa chỉ đăng ký: </strong>Tổ dân phố
+                                    Tháp, P.Đại<br />
+                                    Mỗ, Q.Nam Từ Liêm, TP.Hà Nội, Việt Nam
+                                </p>
+                                <p>
+                                    <strong>Số điện thoại: </strong>0243 205
+                                    2222
+                                </p>
+                            </div>
+
+                            <ul class="list-social">
+                                <li>
+                                    <a href="" target="_blank">
+                                        <img src="" alt="ic_fb" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank">
+                                        <img src="" alt="ic_gg" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank">
+                                        <img
+                                            src=""
+                                            alt="ic_instagram"
+                                            style="height: 30px"
+                                        />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank">
+                                        <img
+                                            src=""
+                                            alt="ic_pinterest"
+                                            style="height: 27px"
+                                        />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank">
+                                        <img src="" alt="ic_ytb" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="footer-intro">
+                        <p class="title-intro">Giới thiệu</p>
+                        <ul>
+                            <li>
+                                <a href="#" class="link-intro">Về IVY moda</a>
+                            </li>
+                            <li>
+                                <a href="#" class="link-intro">Tuyển dụng</a>
+                            </li>
+                            <li>
+                                <a href="#" class="link-intro"
+                                    >Hệ thống cửa hàng</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-service">
+                        <p class="title-service">Dịch vụ khách hàng</p>
+                        <ul>
+                            <li>
+                                <a href="#" class="link-service"
+                                    >Chính sách điều khoản</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" class="link-service"
+                                    >Hướng dẫn mua hàng</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" class="link-service"
+                                    >Chính sách thanh toán</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" class="link-service"
+                                    >Chính sách đổi trả</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" class="link-service"
+                                    >Chính sách bảo hành</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" class="link-service"
+                                    >Chính sách giao nhận vận chuyển</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <p class="title-contact">Liên hệ</p>
+                        <ul>
+                            <li>
+                                <a href="#" class="link-contact">Hotline</a>
+                            </li>
+                            <li>
+                                <a href="#" class="link-contact">Email</a>
+                            </li>
+                            <li>
+                                <a href="#" class="link-contact">Live Chat</a>
+                            </li>
+                            <li>
+                                <a href="#" class="link-contact" target="_blank"
+                                    >Messenger</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" class="link-contact">Liên hệ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-mail">
+                        <div class="mail-container">
+                            <p class="title-mail">
+                                Nhận thông tin các chương trình của IVY moda
+                            </p>
+                            <form class="mail-form">
+                                <input
+                                    id="email_subscribe"
+                                    type="text"
+                                    name="email"
+                                    placeholder="Nhập địa chỉ email"
+                                    required="required"
+                                />
+                                <div class="btn-submit">
+                                    <input
+                                        id="btn-submit"
+                                        class="form-submit"
+                                        value="Đăng ký"
+                                        type="submit"
+                                    />
+                                </div>
+                            </form>
+                            <div id="subscribe_error"></div>
+                        </div>
+                        <div class="mail-dowload">
+                            <p class="dowload-mail">Download App</p>
+                            <ul>
+                                <li>
+                                    <a
+                                        id="app_ios"
+                                        href="#"
+                                        class="link-white"
+                                        title="Tải App IVYmoda trên App Store"
+                                    >
+                                        <img
+                                            src="./assets/images/icon/appstore.png"
+                                            class="img-fluid"
+                                            alt="appstore"
+                                        />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        id="app_android"
+                                        href="#"
+                                        class="link-white"
+                                        title="Tải App IVYmoda trên Google Play"
+                                    >
+                                        <img
+                                            src="./assets/images/icon/googleplay.png"
+                                            class="img-fluid"
+                                            alt="googleplay"
+                                        />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-copyright">©IVYmoda All rights reserved</div>
+        </footer>
+    </body>
 </html>

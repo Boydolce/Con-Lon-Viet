@@ -1,521 +1,601 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>IVY Moda</title>
+    <head>
+        <title>IVY Moda</title>
 
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/base.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/base.css" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
 
-    <style>
-      .tab {
-        overflow: hidden;
-        border: 1px solid #ccc;
-        background-color: #f1f1f1;
-      }
+        <style>
+            .tab {
+                overflow: hidden;
+                border: 1px solid #ddd;
+                background-color: #fff;
+            }
 
-      /* Style the buttons that are used to open the tab content */
-      .tab button {
-        background-color: inherit;
-        float: left;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        padding: 14px 16px;
-        transition: 0.3s;
-      }
+            /* Style the buttons that are used to open the tab content */
+            .tab button {
+                background-color: inherit;
+                float: left;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                padding: 14px 16px;
+                transition: 0.3s;
+                position: relative;
+            }
 
-      /* Change background color of buttons on hover */
-      .tab button:hover {
-        background-color: #ddd;
-      }
+            .tab button::after {
+                content: "";
+                border-right: 1px solid #ccc;
+                position: absolute;
+                height: 15px;
+                margin-left: 15px;
+            }
 
-      /* Create an active/current tablink class */
-      .tab button.active {
-        background-color: #ccc;
-      }
+            /* Change background color of buttons on hover */
+            .tab button:hover {
+                background-color: ghostwhite;
+            }
 
-      /* Style the tab content */
-      .tabcontent {
-        display: none;
-        padding: 6px 12px;
-        border: 1px solid #ccc;
-        border-top: none;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Begin Header -->
-    <header id="header">
-      <div class="logo">
-        <img src="./assets/images/logo.png" />
-      </div>
+            /* Create an active/current tablink class */
+            .tab button.active {
+                background-color: #ccc;
+            }
 
-      <div class="menu">
-        <li>
-          <a href="">NỮ</a>
-          <ul class="submenu">
-            <li>
-              <a href=""><strong>Hàng mới về</strong>̀</a>
-            </li>
-            <li>
-              <a href=""> <strong>Áo</strong></a>
-              <ul>
-                <li><a href="">Áo sơ mi</a></li>
-                <li><a href="">Áo thun</a></li>
-                <li><a href="">Áo khoác</a></li>
-                <li><a href="">Áo len</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href=""><strong>Quần</strong></a>
-              <ul>
-                <li><a href="">Quần dài</a></li>
-                <li><a href="">Quần jeans</a></li>
-                <li><a href="">Jumpsuit</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="">NAM</a>
-          <ul class="submenu">
-            <li>
-              <a href=""><strong>Hàng mới về</strong></a>
-            </li>
-            <li>
-              <a href=""><strong>Áo</strong></a>
-              <ul>
-                <li><a href="">Áo sơ mi</a></li>
-                <li><a href="">Áo polo</a></li>
-                <li><a href="">Áo len</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href=""><strong>Quần</strong></a>
-              <ul>
-                <li><a href="">Quần dài</a></li>
-                <li><a href="">Quần jeans</a></li>
-                <li><a href="">Quần âu</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="">TRẺ EM</a>
-          <ul class="submenu">
-            <li>
-              <a href=""><strong>Bé gái</strong></a>
-              <ul>
-                <li><a href="">Áo bé gái</a></li>
-                <li><a href="">Quần bé gái</a></li>
-                <li><a href="">Váy bé gái</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href=""><strong>Bé trai</strong></a>
-              <ul>
-                <li><a href="">Áo bé trai</a></li>
-                <li><a href="">Quần bé trai</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="">BỘ SƯU TẬP</a>
-          <ul class="submenu">
-            <li>
-              <a href=""><strong>Nữ</strong></a>
-              <ul>
-                <li><a href="">Discover Charming</a></li>
-                <li><a href="">Spring Love</a></li>
-                <li><a href="">Art Station</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href=""><strong>Nam</strong></a>
-              <ul>
-                <li><a href="">New Polo for Men</a></li>
-                <li><a href="">Nature Soft</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href=""><strong>Trẻ em</strong></a>
-              <ul>
-                <li><a href="">Adorable Sweatsuit</a></li>
-                <li><a href="">Draw the Dream</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="">VỀ CHÚNG TÔI</a>
-          <ul class="submenu">
-            <li>
-              <a href=""><strong>Về IVY moda</strong></a>
-            </li>
-            <li>
-              <a href=""><strong>Chính sách thẻ thành viên</strong></a>
-            </li>
-            <li>
-              <a href=""><strong>Chính sách đổi trả </strong></a>
-            </li>
-            <li>
-              <a href=""><strong>Hệ thống cửa hàng</strong></a>
-            </li>
-          </ul>
-        </li>
-      </div>
-      <div class="others">
-        <li>
-          <form action="#" method="get">
-            <input placeholder="Tìm kiếm" type="text" />
-            <button type="submit">
-              <i class="fa fa-search others-icon"></i>
-            </button>
-          </form>
-        </li>
-        <li><a class="fa fa-user" href="./login.html"></a></li>
-        <li><a class="fa fa-shopping-cart" href=""></a></li>
-      </div>
-    </header>
-    <!-- End Header -->
+            /* Style the tab content */
+            .tabcontent {
+                display: none;
+                padding: 6px 12px;
+                border: 1px solid #ccc;
+                border-top: none;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Begin Header -->
+        <header id="header">
+            <div class="logo">
+                <img src="./assets/images/logo.png" />
+            </div>
 
-    <!-- Begin Content -->
-    <div class="container-product">
-      <ul class="breadcrumb">
-        <li><a href="index.html">Trang chủ</a></li>
-        <li>Áo Polo Phối Kẻ</li>
-      </ul>
+            <div class="menu">
+                <li>
+                    <a href="">NỮ</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href=""><strong>Hàng mới về</strong>̀</a>
+                        </li>
+                        <li>
+                            <a href=""> <strong>Áo</strong></a>
+                            <ul>
+                                <li><a href="">Áo sơ mi</a></li>
+                                <li><a href="">Áo thun</a></li>
+                                <li><a href="">Áo khoác</a></li>
+                                <li><a href="">Áo len</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href=""><strong>Quần</strong></a>
+                            <ul>
+                                <li><a href="">Quần dài</a></li>
+                                <li><a href="">Quần jeans</a></li>
+                                <li><a href="">Jumpsuit</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">NAM</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href=""><strong>Hàng mới về</strong></a>
+                        </li>
+                        <li>
+                            <a href=""><strong>Áo</strong></a>
+                            <ul>
+                                <li><a href="">Áo sơ mi</a></li>
+                                <li><a href="">Áo polo</a></li>
+                                <li><a href="">Áo len</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href=""><strong>Quần</strong></a>
+                            <ul>
+                                <li><a href="">Quần dài</a></li>
+                                <li><a href="">Quần jeans</a></li>
+                                <li><a href="">Quần âu</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">TRẺ EM</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href=""><strong>Bé gái</strong></a>
+                            <ul>
+                                <li><a href="">Áo bé gái</a></li>
+                                <li><a href="">Quần bé gái</a></li>
+                                <li><a href="">Váy bé gái</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href=""><strong>Bé trai</strong></a>
+                            <ul>
+                                <li><a href="">Áo bé trai</a></li>
+                                <li><a href="">Quần bé trai</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">BỘ SƯU TẬP</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href=""><strong>Nữ</strong></a>
+                            <ul>
+                                <li><a href="">Discover Charming</a></li>
+                                <li><a href="">Spring Love</a></li>
+                                <li><a href="">Art Station</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href=""><strong>Nam</strong></a>
+                            <ul>
+                                <li><a href="">New Polo for Men</a></li>
+                                <li><a href="">Nature Soft</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href=""><strong>Trẻ em</strong></a>
+                            <ul>
+                                <li><a href="">Adorable Sweatsuit</a></li>
+                                <li><a href="">Draw the Dream</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">VỀ CHÚNG TÔI</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href=""><strong>Về IVY moda</strong></a>
+                        </li>
+                        <li>
+                            <a href=""
+                                ><strong>Chính sách thẻ thành viên</strong></a
+                            >
+                        </li>
+                        <li>
+                            <a href=""><strong>Chính sách đổi trả </strong></a>
+                        </li>
+                        <li>
+                            <a href=""><strong>Hệ thống cửa hàng</strong></a>
+                        </li>
+                    </ul>
+                </li>
+            </div>
+            <div class="others">
+                <li>
+                    <form action="#" method="get">
+                        <input placeholder="Tìm kiếm" type="text" />
+                        <button type="submit">
+                            <i class="fa fa-search others-icon"></i>
+                        </button>
+                    </form>
+                </li>
+                <li><a class="fa fa-user" href="./login.html"></a></li>
+                <li><a class="fa fa-shopping-cart" href=""></a></li>
+            </div>
+        </header>
+        <!-- End Header -->
 
-      <div class="product-content">
-        <div class="zoom-product">
-          <figure
-            class="zoom"
-            style="background-image: url(./assets/images/product/product1.jpg)"
-            onmousemove="zoom(event)"
-          >
-            <img src="./assets/images/product/product1.jpg" class="zoom-img" />
-          </figure>
-        </div>
-
-        <div class="details-product">
-          <div class="details-content">
-            <h3 class="details-name">Áo Polo Phối Kẻ</h3>
-            <p class="details-price">790.000đ</p>
-            <p class="details-color">Màu sắc: Đen</p>
-            <ul class="details-size">
-              <li>
-                <a href="#">S</a>
-              </li>
-              <li>
-                <a href="#">M</a>
-              </li>
-              <li>
-                <a href="#">L</a>
-              </li>
-              <li>
-                <a href="#">XL</a>
-              </li>
-              <li>
-                <a href="#">XXL</a>
-              </li>
+        <!-- Begin Content -->
+        <div class="container-product">
+            <ul class="breadcrumb">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li>Áo Polo Phối Kẻ</li>
             </ul>
-            <div class="details-cal">
-              <span class="details-number"> Số lượng </span>
-              <button class="minus">-</button>
-              <input type="number" class="qty" min="1" />
-              <button class="sub">+</button>
-            </div>
-            <div class="details-btn">
-              <button class="btn-cart">Thêm vào giỏ</button>
-            </div>
-          </div>
 
-          <div class="details-info">
-            <div class="tab">
-              <button class="tablinks" onclick="openCity(event, 'London')">
-                London
-              </button>
-              <button class="tablinks" onclick="openCity(event, 'Paris')">
-                Paris
-              </button>
-              <button class="tablinks" onclick="openCity(event, 'Tokyo')">
-                Tokyo
-              </button>
-            </div>
-
-            <div id="London" class="tabcontent">
-              <h3>London</h3>
-              <p>London is the capital city of England.</p>
-            </div>
-
-            <div id="Paris" class="tabcontent">
-              <h3>Paris</h3>
-              <p>Paris is the capital of France.</p>
-            </div>
-
-            <div id="Tokyo" class="tabcontent">
-              <h3>Tokyo</h3>
-              <p>Tokyo is the capital of Japan.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End Content -->
-
-    <!-- Footer -->
-    <footer id="footer">
-      <div class="footer-container">
-        <div class="flex-container">
-          <div class="footer-info">
-            <div class="logo-info">
-              <a href="index.html">
-                <img
-                  src="./assets/images/logo.png"
-                  alt="logo-footer"
-                  class="logo-img"
-                />
-              </a>
-
-              <a href="#" class="dmca-badge">
-                <img
-                  src="./assets/images/icon/DMCA.png"
-                  alt="DMCA.com Protection Status"
-                  class="logo-img"
-                />
-              </a>
-
-              <a href="#">
-                <img
-                  src="./assets/images/icon/img-congthuong.png"
-                  alt="img-congthuong"
-                  class="logo-img"
-                />
-              </a>
-            </div>
-
-            <div class="content-info">
-              <div class="info-shop">
-                <p>
-                  Công ty Cổ phần Dự Kim với số đăng ký<br />
-                  kinh doanh: 0105777650
-                </p>
-                <p>
-                  <strong>Địa chỉ đăng ký: </strong>Tổ dân phố Tháp, P.Đại<br />
-                  Mỗ, Q.Nam Từ Liêm, TP.Hà Nội, Việt Nam
-                </p>
-                <p><strong>Số điện thoại: </strong>0243 205 2222</p>
-              </div>
-
-              <ul class="list-social">
-                <li>
-                  <a href="" target="_blank">
-                    <img src="" alt="ic_fb" />
-                  </a>
-                </li>
-                <li>
-                  <a href="" target="_blank">
-                    <img src="" alt="ic_gg" />
-                  </a>
-                </li>
-                <li>
-                  <a href="" target="_blank">
-                    <img src="" alt="ic_instagram" style="height: 30px" />
-                  </a>
-                </li>
-                <li>
-                  <a href="" target="_blank">
-                    <img src="" alt="ic_pinterest" style="height: 27px" />
-                  </a>
-                </li>
-                <li>
-                  <a href="" target="_blank">
-                    <img src="" alt="ic_ytb" />
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="footer-intro">
-            <p class="title-intro">Giới thiệu</p>
-            <ul>
-              <li>
-                <a href="#" class="link-intro">Về IVY moda</a>
-              </li>
-              <li>
-                <a href="#" class="link-intro">Tuyển dụng</a>
-              </li>
-              <li>
-                <a href="#" class="link-intro">Hệ thống cửa hàng</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="footer-service">
-            <p class="title-service">Dịch vụ khách hàng</p>
-            <ul>
-              <li>
-                <a href="#" class="link-service">Chính sách điều khoản</a>
-              </li>
-              <li>
-                <a href="#" class="link-service">Hướng dẫn mua hàng</a>
-              </li>
-              <li>
-                <a href="#" class="link-service">Chính sách thanh toán</a>
-              </li>
-              <li>
-                <a href="#" class="link-service">Chính sách đổi trả</a>
-              </li>
-              <li>
-                <a href="#" class="link-service">Chính sách bảo hành</a>
-              </li>
-              <li>
-                <a href="#" class="link-service"
-                  >Chính sách giao nhận vận chuyển</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="footer-contact">
-            <p class="title-contact">Liên hệ</p>
-            <ul>
-              <li>
-                <a href="#" class="link-contact">Hotline</a>
-              </li>
-              <li>
-                <a href="#" class="link-contact">Email</a>
-              </li>
-              <li>
-                <a href="#" class="link-contact">Live Chat</a>
-              </li>
-              <li>
-                <a href="#" class="link-contact" target="_blank">Messenger</a>
-              </li>
-              <li>
-                <a href="#" class="link-contact">Liên hệ</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-mail">
-            <div class="mail-container">
-              <p class="title-mail">
-                Nhận thông tin các chương trình của IVY moda
-              </p>
-              <form class="mail-form">
-                <input
-                  id="email_subscribe"
-                  type="text"
-                  name="email"
-                  placeholder="Nhập địa chỉ email"
-                  required="required"
-                />
-                <div class="btn-submit">
-                  <input
-                    id="btn-submit"
-                    class="form-submit"
-                    value="Đăng ký"
-                    type="submit"
-                  />
+            <div class="product-content">
+                <div class="zoom-product">
+                    <figure
+                        class="zoom"
+                        style="
+                            background-image: url(./assets/images/product/product1.jpg);
+                        "
+                        onmousemove="zoom(event)"
+                    >
+                        <img
+                            src="./assets/images/product/product1.jpg"
+                            class="zoom-img"
+                        />
+                    </figure>
                 </div>
-              </form>
-              <div id="subscribe_error"></div>
+
+                <div class="details-product">
+                    <div class="details-content">
+                        <h3 class="details-name">Áo Polo Phối Kẻ</h3>
+                        <p class="details-price">790.000đ</p>
+                        <p class="details-color">Màu sắc: Đen</p>
+                        <ul class="details-size">
+                            <li>
+                                <a href="#">S</a>
+                            </li>
+                            <li>
+                                <a href="#">M</a>
+                            </li>
+                            <li>
+                                <a href="#">L</a>
+                            </li>
+                            <li>
+                                <a href="#">XL</a>
+                            </li>
+                            <li>
+                                <a href="#">XXL</a>
+                            </li>
+                        </ul>
+                        <div class="details-cal">
+                            <span class="details-title"> Số lượng </span>
+                            <div class="details-wrap">
+                                <button class="minus">-</button>
+                                <span class="qty">01</span>
+                                <button class="plus">+</button>
+                            </div>
+                        </div>
+                        <div class="details-btn">
+                            <button class="btn-cart">Thêm vào giỏ</button>
+                        </div>
+                    </div>
+
+                    <div class="details-info">
+                        <div class="tab">
+                            <button
+                                class="tablinks"
+                                onclick="openCity(event, 'London')"
+                            >
+                                Giới thiệu
+                            </button>
+                            <button
+                                class="tablinks"
+                                onclick="openCity(event, 'Paris')"
+                            >
+                                Chi tiết sản phẩm
+                            </button>
+                            <button
+                                class="tablinks"
+                                onclick="openCity(event, 'Tokyo')"
+                            >
+                                Bảo quản
+                            </button>
+                        </div>
+
+                        <div id="London" class="tabcontent">
+                            <h3>London</h3>
+                            <p>London is the capital city of England.</p>
+                        </div>
+
+                        <div id="Paris" class="tabcontent">
+                            <h3>Paris</h3>
+                            <p>Paris is the capital of France.</p>
+                        </div>
+
+                        <div id="Tokyo" class="tabcontent">
+                            <h3>Tokyo</h3>
+                            <p>Tokyo is the capital of Japan.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="mail-dowload">
-              <p class="dowload-mail">Download App</p>
-              <ul>
-                <li>
-                  <a
-                    id="app_ios"
-                    href="#"
-                    class="link-white"
-                    title="Tải App IVYmoda trên App Store"
-                  >
-                    <img
-                      src="./assets/images/icon/appstore.png"
-                      class="img-fluid"
-                      alt="appstore"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    id="app_android"
-                    href="#"
-                    class="link-white"
-                    title="Tải App IVYmoda trên Google Play"
-                  >
-                    <img
-                      src="./assets/images/icon/googleplay.png"
-                      class="img-fluid"
-                      alt="googleplay"
-                    />
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
         </div>
-      </div>
+        <!-- End Content -->
 
-      <div class="footer-copyright">©IVYmoda All rights reserved</div>
-    </footer>
-  </body>
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="footer-container">
+                <div class="flex-container">
+                    <div class="footer-info">
+                        <div class="logo-info">
+                            <a href="index.html">
+                                <img
+                                    src="./assets/images/logo.png"
+                                    alt="logo-footer"
+                                    class="logo-img"
+                                />
+                            </a>
 
-  <!-- Navigation scroll -->
-  <script>
-    const header = document.querySelector("header");
-    window.addEventListener("scroll", function () {
-      x = window.pageYOffset;
-      if (x > 0) {
-        header.classList.add("sticky");
-      } else {
-        header.classList.remove("sticky");
-      }
-    });
-  </script>
+                            <a href="#" class="dmca-badge">
+                                <img
+                                    src="./assets/images/icon/DMCA.png"
+                                    alt="DMCA.com Protection Status"
+                                    class="logo-img"
+                                />
+                            </a>
 
-  <!-- Zoom product -->
-  <script>
-    function zoom(e) {
-      var zoomer = e.currentTarget;
-      e.offsetX ? (offsetX = e.offsetX) : (offsetX = e.touches[0].pageX);
-      e.offsetY ? (offsetY = e.offsetY) : (offsetX = e.touches[0].pageX);
-      x = (offsetX / zoomer.offsetWidth) * 100;
-      y = (offsetY / zoomer.offsetHeight) * 100;
-      zoomer.style.backgroundPosition = x + "% " + y + "%";
-    }
-  </script>
+                            <a href="#">
+                                <img
+                                    src="./assets/images/icon/img-congthuong.png"
+                                    alt="img-congthuong"
+                                    class="logo-img"
+                                />
+                            </a>
+                        </div>
 
-  <script>
-    function openCity(evt, cityName) {
-      // Declare all variables
-      var i, tabcontent, tablinks;
+                        <div class="content-info">
+                            <div class="info-shop">
+                                <p>
+                                    Công ty Cổ phần Dự Kim với số đăng ký<br />
+                                    kinh doanh: 0105777650
+                                </p>
+                                <p>
+                                    <strong>Địa chỉ đăng ký: </strong>Tổ dân phố
+                                    Tháp, P.Đại<br />
+                                    Mỗ, Q.Nam Từ Liêm, TP.Hà Nội, Việt Nam
+                                </p>
+                                <p>
+                                    <strong>Số điện thoại: </strong>0243 205
+                                    2222
+                                </p>
+                            </div>
 
-      // Get all elements with class="tabcontent" and hide them
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-      }
+                            <ul class="list-social">
+                                <li>
+                                    <a href="" target="_blank">
+                                        <img src="" alt="ic_fb" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank">
+                                        <img src="" alt="ic_gg" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank">
+                                        <img
+                                            src=""
+                                            alt="ic_instagram"
+                                            style="height: 30px"
+                                        />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank">
+                                        <img
+                                            src=""
+                                            alt="ic_pinterest"
+                                            style="height: 27px"
+                                        />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank">
+                                        <img src="" alt="ic_ytb" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 
-      // Get all elements with class="tablinks" and remove the class "active"
-      tablinks = document.getElementsByClassName("tablinks");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-      }
+                    <div class="footer-intro">
+                        <p class="title-intro">Giới thiệu</p>
+                        <ul>
+                            <li>
+                                <a href="#" class="link-intro">Về IVY moda</a>
+                            </li>
+                            <li>
+                                <a href="#" class="link-intro">Tuyển dụng</a>
+                            </li>
+                            <li>
+                                <a href="#" class="link-intro"
+                                    >Hệ thống cửa hàng</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
 
-      // Show the current tab, and add an "active" class to the button that opened the tab
-      document.getElementById(cityName).style.display = "block";
-      evt.currentTarget.className += " active";
-    }
-  </script>
+                    <div class="footer-service">
+                        <p class="title-service">Dịch vụ khách hàng</p>
+                        <ul>
+                            <li>
+                                <a href="#" class="link-service"
+                                    >Chính sách điều khoản</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" class="link-service"
+                                    >Hướng dẫn mua hàng</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" class="link-service"
+                                    >Chính sách thanh toán</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" class="link-service"
+                                    >Chính sách đổi trả</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" class="link-service"
+                                    >Chính sách bảo hành</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" class="link-service"
+                                    >Chính sách giao nhận vận chuyển</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <p class="title-contact">Liên hệ</p>
+                        <ul>
+                            <li>
+                                <a href="#" class="link-contact">Hotline</a>
+                            </li>
+                            <li>
+                                <a href="#" class="link-contact">Email</a>
+                            </li>
+                            <li>
+                                <a href="#" class="link-contact">Live Chat</a>
+                            </li>
+                            <li>
+                                <a href="#" class="link-contact" target="_blank"
+                                    >Messenger</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#" class="link-contact">Liên hệ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-mail">
+                        <div class="mail-container">
+                            <p class="title-mail">
+                                Nhận thông tin các chương trình của IVY moda
+                            </p>
+                            <form class="mail-form">
+                                <input
+                                    id="email_subscribe"
+                                    type="text"
+                                    name="email"
+                                    placeholder="Nhập địa chỉ email"
+                                    required="required"
+                                />
+                                <div class="btn-submit">
+                                    <input
+                                        id="btn-submit"
+                                        class="form-submit"
+                                        value="Đăng ký"
+                                        type="submit"
+                                    />
+                                </div>
+                            </form>
+                            <div id="subscribe_error"></div>
+                        </div>
+                        <div class="mail-dowload">
+                            <p class="dowload-mail">Download App</p>
+                            <ul>
+                                <li>
+                                    <a
+                                        id="app_ios"
+                                        href="#"
+                                        class="link-white"
+                                        title="Tải App IVYmoda trên App Store"
+                                    >
+                                        <img
+                                            src="./assets/images/icon/appstore.png"
+                                            class="img-fluid"
+                                            alt="appstore"
+                                        />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        id="app_android"
+                                        href="#"
+                                        class="link-white"
+                                        title="Tải App IVYmoda trên Google Play"
+                                    >
+                                        <img
+                                            src="./assets/images/icon/googleplay.png"
+                                            class="img-fluid"
+                                            alt="googleplay"
+                                        />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-copyright">©IVYmoda All rights reserved</div>
+        </footer>
+    </body>
+
+    <!-- Navigation scroll -->
+    <script>
+        const header = document.querySelector("header");
+        window.addEventListener("scroll", function () {
+            x = window.pageYOffset;
+            if (x > 0) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        });
+    </script>
+
+    <!-- Zoom product -->
+    <script>
+        function zoom(e) {
+            var zoomer = e.currentTarget;
+            e.offsetX ? (offsetX = e.offsetX) : (offsetX = e.touches[0].pageX);
+            e.offsetY ? (offsetY = e.offsetY) : (offsetX = e.touches[0].pageX);
+            x = (offsetX / zoomer.offsetWidth) * 100;
+            y = (offsetY / zoomer.offsetHeight) * 100;
+            zoomer.style.backgroundPosition = x + "% " + y + "%";
+        }
+    </script>
+
+    <script>
+        function openCity(evt, cityName) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(
+                    " active",
+                    ""
+                );
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+
+    <script>
+        const plus = document.querySelector(".plus");
+        const minus = document.querySelector(".minus");
+        const qty = document.querySelector(".qty");
+
+        let a = 1;
+
+        plus.addEventListener("click", () => {
+            a++;
+            a = a < 10 ? "0" + a : a;
+            qty.innerHTML = a;
+            console.log(a);
+        });
+
+        minus.addEventListener("click", () => {
+            if (a > 1) {
+                a--;
+                a = a < 10 ? "0" + a : a;
+                qty.innerHTML = a;
+                console.log(a);
+            }
+        });
+    </script>
 </html>
